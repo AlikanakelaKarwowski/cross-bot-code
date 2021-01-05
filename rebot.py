@@ -14,7 +14,7 @@ bot = commands.Bot(command_prefix=['!','.'])
 async def on_ready():
     print(f'{bot.user} has connected to Discord!')
 
-initial_extensions = ['cogs.moderation']
+initial_extensions = ['cogs.moderation', 'cogs.events']
 
 if __name__ == '__main__':
     for extension in initial_extensions:
