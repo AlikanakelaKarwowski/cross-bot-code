@@ -26,7 +26,7 @@ if __name__ == '__main__':
 
 @bot.command()
 async def ping(ctx):
-    await ctx.send(f"`Pong {round(bot.latency*1000)}ms`")
+    await ctx.send(f"Pong {round(bot.latency*1000)}ms")
 
 @bot.command()
 @commands.has_permissions(ban_members=True)
