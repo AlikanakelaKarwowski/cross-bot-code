@@ -100,7 +100,7 @@ class ModCog(commands.Cog, name='Moderation'):
                 embed.add_field(name="Reason", value=reason, inline=True)
                 embed.add_field(name="Moderator", value=f"@{mod}", inline=True)
                 embed.add_field(name="Server", value=server, inline=True)
-                embed.set_footer(text=f"<{member.id}> @{user}")
+                embed.set_footer(text=f"<{int(member)}> @{user}")
                 await ctx.send(embed=embed)
             except Exception as e:
                 if uwu == True:
