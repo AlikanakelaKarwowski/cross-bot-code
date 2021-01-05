@@ -19,14 +19,14 @@ async def on_ready():
 initial_extensions = ['cogs.moderation']
 
 if __name__ == '__main__':
-    for extension in initial_extenstions:
+    for extension in initial_extensions:
         try:
             bot.load_extension(extension)
         except Exception as e:
             print(f"Failed to load extension {extension}")
             traceback.print_exc()
 
-            
+
 # Clown a Bad Advice User
 @bot.event
 async def on_message(message):
