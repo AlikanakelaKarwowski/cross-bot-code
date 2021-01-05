@@ -11,7 +11,7 @@ class ModCog(commands.Cog, name='Moderation'):
     @commands.command()
     @commands.has_permissions(ban_members=True)
     # Update file when a mod bans someone
-    async def ban(ctx, member: discord.Member = None, *, reason=""):
+    async def ban(self, ctx, member: discord.Member = None, *, reason=""):
         uwu = False
         # User, Moderator, and Server
         mod = ctx.author
@@ -43,7 +43,7 @@ class ModCog(commands.Cog, name='Moderation'):
     @commands.command(aliases=["uplist"])
     @commands.has_permissions(administrator=True)
     # Get previous bans pre Bot Inclusion
-    async def update_ban_list(ctx):
+    async def update_ban_list(self, ctx):
         banned_users = await ctx.guild.bans()
         with open('/damers-bot/banned_users.txt', mode="r") as csv_file:
             data = [i for i in csv.reader(csv_file)]
