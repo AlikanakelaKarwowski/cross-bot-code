@@ -5,8 +5,6 @@ from discord.ext import commands
 import asyncio
 import sys
 import os
-import csv
-from datetime import date
 from key import *
 
 bot = commands.Bot(command_prefix=['!','.'])

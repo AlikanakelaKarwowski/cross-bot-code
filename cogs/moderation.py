@@ -1,7 +1,13 @@
 import discord
 from discord.ext import commands
+from discord.utils import get
 import asyncio
-import datetime
+import sys
+import os
+import csv
+from datetime import date
+from key import *
+
 
 class ModCog(commands.Cog, name='Moderation'):
 
@@ -14,7 +20,7 @@ class ModCog(commands.Cog, name='Moderation'):
     async def ban(self, ctx, member: discord.Member = None, *, reason=""):
         uwu = False
         # User, Moderator, and Server
-        
+        mod = ctx.author
         user = await self.bot.fetch_user(member.id)
         server = ctx.guild.name
         if reason == "" or member == None:
@@ -23,7 +29,7 @@ class ModCog(commands.Cog, name='Moderation'):
             # Write to file (appending)
             with open('/damers-bot/banned_users.txt', mode='a') as csv_file:
                 csv_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-                csv_writer.writerow([member.id, user, reason, date.today(), ctx.author, server])
+                csv_writer.writerow([member.id, user, reason, date.today(), mod, server])
             try:
                 embed = discord.Embed(title="Banned", url="" , description="" , color=0xff0000)
                 embed.add_field(name="User", value=f"@{user}", inline=True)
