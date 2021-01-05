@@ -1,20 +1,32 @@
 #!/usr/bin/python3.8
-import csv
-from datetime import date
 import discord
-import os
-from key import *
 from discord.utils import get
 from discord.ext import commands
+import asyncio
+import sys
+import os
+import csv
+from datetime import date
+from key import *
 
 bot = commands.Bot(command_prefix=['!','.'])
 
 # On Connect
 @bot.event
 async def on_ready():
-    preferences = ['none']
     print(f'{bot.user} has connected to Discord!')
 
+initial_extensions = ['cogs.moderation']
+
+if __name__ == '__main__':
+    for extension in initial_extenstions:
+        try:
+            bot.load_extension(extension)
+        except Exception as e:
+            print(f"Failed to load extension {extension}")
+            traceback.print_exc()
+
+            
 # Clown a Bad Advice User
 @bot.event
 async def on_message(message):
