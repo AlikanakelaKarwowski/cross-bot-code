@@ -15,7 +15,7 @@ class ModCog(commands.Cog, name='Moderation'):
         uwu = False
         # User, Moderator, and Server
         
-        user = await bot.fetch_user(member.id)
+        user = await self.bot.fetch_user(member.id)
         server = ctx.guild.name
         if reason == "" or member == None:
             await ctx.send(f"!Ban needs a User and a Reason <@{ctx.author.id}>")
@@ -49,7 +49,7 @@ class ModCog(commands.Cog, name='Moderation'):
             data = [i for i in csv.reader(csv_file)]
         w_flag = True
         num = 0
-        mod = await bot.fetch_user(ctx.author.id)
+        mod = await self.bot.fetch_user(ctx.author.id)
         for entry in banned_users:
             DID = entry.user.id
             reason = entry.reason
