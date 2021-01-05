@@ -83,7 +83,7 @@ class ModCog(commands.Cog, name='Moderation'):
         try:
             user = await self.bot.fetch_user(int(member))
         except Exception as e:
-            await ctx.send(f"Send this error \n| {e} |\n to my maintainer <@{dist}>")
+            await ctx.send(f"Couldnt Find the username for ID:{int(member)}")
             user = "NA"
 
         server = ctx.guild.name
@@ -93,7 +93,7 @@ class ModCog(commands.Cog, name='Moderation'):
             # Write to file (appending)
             with open('/damers-bot/banned_users.txt', mode='a') as csv_file:
                 csv_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-                csv_writer.writerow([member.id, user, reason, date.today(), mod, server])
+                csv_writer.writerow([int(member), user, reason, date.today(), mod, server])
             try:
                 embed = discord.Embed(title="Retconned", url="" , description="" , color=0xff0000)
                 embed.add_field(name="User", value=f"@{user}", inline=True)
