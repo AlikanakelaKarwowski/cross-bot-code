@@ -24,21 +24,9 @@ if __name__ == '__main__':
             print(f"Failed to load extension {extension}")
             
 
-"""
-# Clown a Bad Advice User
-@bot.event
-async def on_message(message):
-
-    if message.channel.id in discord_channel:
-	# Roles specifically include Bad Advice
-        if str(message.author.roles).__contains__(role):
-            await message.add_reaction('🤡')
-    await bot.process_commands(message)
-"""
-
 @bot.command()
 async def ping(ctx):
-    await ctx.send(f"Pong {round(bot.latency*1000)}ms")
+    await ctx.send(f"`Pong {round(bot.latency*1000)}ms`")
 
 @bot.command()
 @commands.has_permissions(ban_members=True)
