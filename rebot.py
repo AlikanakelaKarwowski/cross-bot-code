@@ -29,9 +29,9 @@ async def on_message(message):
 @commands.has_permissions(ban_members=True)
 # Update file when a mod bans someone
 async def ban(ctx, member: discord.Member = None, *, reason=""):
-    if ctx.author
-    mod = await bot.fetch_user(ctx.author.id)
+    uwu = False
     # User, Moderator, and Server
+    mod = ctx.author
     user = await bot.fetch_user(member.id)
     server = ctx.guild.name
     if reason == "" or member == None:
@@ -50,7 +50,7 @@ async def ban(ctx, member: discord.Member = None, *, reason=""):
             embed.set_footer(text=f"<{member.id}> @{user}")
             await ctx.send(embed=embed)
         except Exception as e:
-            if uwu = True:
+            if uwu == True:
                 await ctx.send(f"Wuh Woh Mastew. uwu. Someting Went Aww Fucky Wucky Own Me. uwu. Down't Wowwy Mastew. uwu. I was a godd wittwe bot awnd wecowded {user} fow uwu anyways. uwu")
                 await ctx.send(f"Send this error \n| {e} |\n to my master <@{dist}>")
             else:
