@@ -22,7 +22,7 @@ if __name__ == '__main__':
             bot.load_extension(extension)
         except Exception as e:
             print(f"Failed to load extension {extension}")
-            
+
 
 @bot.command()
 async def ping(ctx):
@@ -44,8 +44,6 @@ async def unban(ctx, member: discord.Member, *, reason=""):
                 if row[0] == member.id and row[5] == ctx.guild.name:
                     csv_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
                     csv_writer.writerow
-
-                
 
         try:
             embed = discord.Embed(title="Banned", url="", description="", color=0xff0000)

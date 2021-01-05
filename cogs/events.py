@@ -18,7 +18,6 @@ class EventsCog(commands.Cog, name='Events'):
         # Roles specifically include Bad Advice
             if str(ctx.author.roles).__contains__(role):
                 await ctx.add_reaction('🤡')
-        await self.bot.process_commands(ctx)
 
 def setup(bot):
     bot.add_cog(EventsCog(bot))
