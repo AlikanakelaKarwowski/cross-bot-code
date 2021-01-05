@@ -11,7 +11,7 @@ class EventsCog(commands.Cog, name='Events'):
         self.bot = bot
 
     # Clown a Bad Advice User
-    @commands.Cogs.listener()
+    @commands.Cog.listener()
     async def on_message(self, ctx):
 
         if ctx.channel.id in discord_channel:
