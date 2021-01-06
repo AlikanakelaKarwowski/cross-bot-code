@@ -111,11 +111,11 @@ class ModCog(commands.Cog, name='Moderation'):
                     await ctx.send(f"Send this error \n| {e} |\n to my maintainer <@{dist}>")
     @commands.command()
     @commands.has_permissions(ban_members=True)
-    async def banFuck(self, ctx, member: discord.User = None, *, reason=""):
+    async def banFuck(self, ctx, member, *, reason=""):
         uwu = False
         # User, Moderator, and Server
         mod = ctx.author
-        user = member.name
+        user = self.bot.fetch_user(member)
         server = ctx.guild.name
         if reason == "" or member == None:
             await ctx.send(f"!Ban needs a User and a Reason <@{ctx.author.id}>")
