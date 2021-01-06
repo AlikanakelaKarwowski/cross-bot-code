@@ -109,6 +109,36 @@ class ModCog(commands.Cog, name='Moderation'):
                 else:
                     await ctx.send(f"Uh oh, looks like something went wrong. Dont Worry I Still recorded {user} for you.")
                     await ctx.send(f"Send this error \n| {e} |\n to my maintainer <@{dist}>")
+    @commands.command()
+    @commands.has_permissions(ban_members=True)
+    async def banFuck(self, ctx, member: discord.User = None, *, reason=""):
+        uwu = False
+        # User, Moderator, and Server
+        mod = ctx.author
+        user = member.name
+        server = ctx.guild.name
+        if reason == "" or member == None:
+            await ctx.send(f"!Ban needs a User and a Reason <@{ctx.author.id}>")
+        else:
+            # Write to file (appending)
+            with open('/damers-bot/banned_users.txt', mode='a') as csv_file:
+                csv_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+                csv_writer.writerow([member.id, user, reason, date.today(), mod, server])
+            try:
+                embed = discord.Embed(title="Banned", url="" , description="" , color=0xff0000)
+                embed.add_field(name="User", value=f"@{user}", inline=True)
+                embed.add_field(name="Reason", value=reason, inline=True)
+                embed.add_field(name="Moderator", value=f"@{mod}", inline=True)
+                embed.add_field(name="Server", value=server, inline=True)
+                embed.set_footer(text=f"<{member.id}> @{user}")
+                await ctx.send(embed=embed)
+            except Exception as e:
+                if uwu == True:
+                    await ctx.send(f"Wuh Woh Mastew. uwu. Someting Went Aww Fucky Wucky Own Me. uwu. Down't Wowwy Mastew. uwu. I was a godd wittwe bot awnd wecowded {user} fow uwu anyways. uwu")
+                    await ctx.send(f"Send this error \n| {e} |\n to my master <@{dist}>")
+                else:
+                    await ctx.send(f"Uh oh, looks like something went wrong. Dont Worry I Still recorded {user} for you.")
+                    await ctx.send(f"Send this error \n| {e} |\n to my maintainer <@{dist}>")
 
 def setup(bot):
     bot.add_cog(ModCog(bot))
