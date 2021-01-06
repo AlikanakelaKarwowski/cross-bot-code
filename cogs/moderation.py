@@ -115,7 +115,7 @@ class ModCog(commands.Cog, name='Moderation'):
         uwu = False
         # User, Moderator, and Server
         mod = ctx.author
-        user = self.bot.fetch_user(member)
+        user = self.bot.fetch_user(int(member))
         server = ctx.guild.name
         if reason == "" or member == None:
             await ctx.send(f"!Ban needs a User and a Reason <@{ctx.author.id}>")
@@ -123,14 +123,14 @@ class ModCog(commands.Cog, name='Moderation'):
             # Write to file (appending)
             with open('/damers-bot/banned_users.txt', mode='a') as csv_file:
                 csv_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-                csv_writer.writerow([member.id, user, reason, date.today(), mod, server])
+                csv_writer.writerow([int(member), user, reason, date.today(), mod, server])
             try:
                 embed = discord.Embed(title="Banned", url="" , description="" , color=0xff0000)
                 embed.add_field(name="User", value=f"@{user}", inline=True)
                 embed.add_field(name="Reason", value=reason, inline=True)
                 embed.add_field(name="Moderator", value=f"@{mod}", inline=True)
                 embed.add_field(name="Server", value=server, inline=True)
-                embed.set_footer(text=f"<{member.id}> @{user}")
+                embed.set_footer(text=f"<{member}> @{user}")
                 await ctx.send(embed=embed)
             except Exception as e:
                 if uwu == True:
