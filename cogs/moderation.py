@@ -115,7 +115,7 @@ class ModCog(commands.Cog, name='Moderation'):
         uwu = False
         # User, Moderator, and Server
         mod = ctx.author
-        user = self.bot.fetch_user(int(member))
+        user = await self.bot.fetch_user(int(member))
         server = ctx.guild.name
         if reason == "" or member == None:
             await ctx.send(f"!Ban needs a User and a Reason <@{ctx.author.id}>")
