@@ -32,7 +32,7 @@ async def ping(ctx):
 
 @bot.command()
 async def ding(ctx):
-    await ctx.send(f"Your Dong is {round(bot.latency*100)} inches long")
+    await ctx.send(f"Your Dong is {round(bot.latency*100,1)} inches long")
 
 
 @bot.command()
