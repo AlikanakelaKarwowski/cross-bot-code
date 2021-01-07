@@ -7,6 +7,8 @@ import sys
 import os
 from key import *
 
+#intents = discord.Intents.default()
+#intents.members = True
 bot = commands.Bot(command_prefix=['!','.'])
 
 # On Connect
@@ -27,6 +29,11 @@ if __name__ == '__main__':
 @bot.command()
 async def ping(ctx):
     await ctx.send(f"Pong {round(bot.latency*1000)}ms")
+
+@bot.command()
+async def ding(ctx):
+    await ctx.send(f"Your Dong is {round(bot.latency*100)} inches long")
+
 
 @bot.command()
 @commands.has_permissions(ban_members=True)
