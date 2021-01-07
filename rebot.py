@@ -1,21 +1,18 @@
 #!/usr/bin/python3.8
-import discord
+import discord, sys, asyncio, os
+import random as rd
 from discord.utils import get
 from discord.ext import commands
-import asyncio
-import sys
-import os
 from key import *
-
+from seedling import *
 #intents = discord.Intents.default()
 #intents.members = True
 bot = commands.Bot(command_prefix=['!','.'])
-
 # On Connect
 @bot.event
 async def on_ready():
     print(f'{bot.user} has connected to Discord!')
-
+semen = seedling
 initial_extensions = ['cogs.moderation', 'cogs.events']
 
 if __name__ == '__main__':
@@ -31,8 +28,33 @@ async def ping(ctx):
     await ctx.send(f"Pong {round(bot.latency*1000)}ms")
 
 @bot.command()
-async def ding(ctx):
-    await ctx.send(f"Your Dong is {round(bot.latency*100,1)} inches long")
+@commands.has_any_role('Staff','Experienced Builder','Helper (Jr. EB)','Nitro Booster')
+async def ding(ctx, unit="inch"):
+    rd.seed((ctx.author.id + semen))
+    if unit == "cm" or unit == "CM" or unit == "Cm" :
+        await ctx.send(f"Your Dong is {round(rd.randrange(50,100)/10*2.54, 1)} cm long")
+    else:
+        await ctx.send(f"Your Dong is {rd.randrange(50,100)/10} inches long")
+
+@bot.command()
+async def seedgen(ctx, amount=0):
+    global semen
+    if ctx.author.id == dist:
+        semen += int(amount)
+        await ctx.send(f"Seed was updated for new month by {amount} amount")
+        with open("seedling.py", "w") as seed:
+            seed.write(f"seedling = {semen}")
+
+
+
+"""
+@bot.command()
+async def dong(ctx, member: discord.Member):
+    rd.seed(member.id)
+    if ctx.author.id == 109314596484939776:
+        await ctx.send(f"{member.name}'s Dong is {round(rd.randrange(0,100)/10 - 3, 1)} inches long")
+    else:
+        return None
 
 
 @bot.command()
@@ -64,5 +86,5 @@ async def unban(ctx, member: discord.Member, *, reason=""):
             await ctx.send(f"Wuh Woh Mastew. uwu. Someting Went Aww Fucky Wucky Own Me. uwu. Down't Wowwy Mastew. uwu. I was a godd wittwe bot awnd wecowded {user} fow uwu anyways. uwu")
             await ctx.send(f"Send this error | {e} | to my master <@{dist}>")
 
-
+"""
 bot.run(DISCORD_TOKEN)
