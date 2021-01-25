@@ -4,7 +4,7 @@ import random as rd
 from discord.utils import get
 from discord.ext import commands
 from key import *
-from seedling import *
+
 #intents = discord.Intents.default()
 #intents.members = True
 bot = commands.Bot(command_prefix=['!','.'])
@@ -12,7 +12,7 @@ bot = commands.Bot(command_prefix=['!','.'])
 @bot.event
 async def on_ready():
     print(f'{bot.user} has connected to Discord!')
-semen = seedling
+semen = 0
 initial_extensions = ['cogs.moderation', 'cogs.events']
 
 if __name__ == '__main__':
@@ -30,8 +30,11 @@ async def ping(ctx):
 @bot.command()
 @commands.has_any_role('Staff','Experienced Builder','Helper (Jr. EB)','Nitro Booster')
 async def ding(ctx, unit="inch"):
+    global semen
     rd.seed((ctx.author.id + semen))
-    if unit == "cm" or unit == "CM" or unit == "Cm" :
+    if ctx.author.id == dist:
+       await ctx.send(f"Your Dong is {rd.randrange(75,100)/10} inches long")
+    elif unit == "cm" or unit == "CM" or unit == "Cm" :
         await ctx.send(f"Your Dong is {round(rd.randrange(50,100)/10*2.54, 1)} cm long")
     else:
         await ctx.send(f"Your Dong is {rd.randrange(50,100)/10} inches long")
@@ -42,21 +45,16 @@ async def seedgen(ctx, amount=0):
     if ctx.author.id == dist:
         semen += int(amount)
         await ctx.send(f"Seed was updated for new month by {amount} amount")
-        with open("seedling.py", "w") as seed:
-            seed.write(f"seedling = {semen}")
 
-
-
-"""
 @bot.command()
 async def dong(ctx, member: discord.Member):
     rd.seed(member.id)
-    if ctx.author.id == 109314596484939776:
+    if ctx.author.id == dist:
         await ctx.send(f"{member.name}'s Dong is {round(rd.randrange(0,100)/10 - 3, 1)} inches long")
     else:
         return None
 
-
+"""
 @bot.command()
 @commands.has_permissions(ban_members=True)
 async def unban(ctx, member: discord.Member, *, reason=""):
