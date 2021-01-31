@@ -1,10 +1,7 @@
-import discord
+import discord, asyncio, sys, os, csv, aiosqlite
 from discord.ext import commands
 from discord.utils import get
-import asyncio
-import sys
-import os
-import csv
+
 from datetime import date
 from key import *
 
