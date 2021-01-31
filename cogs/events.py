@@ -1,9 +1,6 @@
-import discord
+import discord, asyncio, sys, os
 from discord.ext import commands
 from discord.utils import get
-import asyncio
-import sys
-import os
 from key import *
 
 class EventsCog(commands.Cog, name='Events'):
