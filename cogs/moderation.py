@@ -24,9 +24,23 @@ class ModCog(commands.Cog, name='Moderation'):
             await ctx.send(f"!Ban needs a User and a Reason <@{ctx.author.id}>")
         else:
             # Write to file (appending)
-            with open('/damers-bot/banned_users.txt', mode='a') as csv_file:
-                csv_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-                csv_writer.writerow([member.id, user, reason, date.today(), mod, server])
+            async with aiosqlite.connect('./ban_list.db ') as db:
+                try:
+                    print(user)
+                    await db.execute("INSERT INTO ban_list (user_id, user_name, reason, date, mod, server) VALUES (?,?,?,?,?,?)", (int(member.id), str(user), str(reason), str(date.today()), str(mod), str(server)))
+                    await db.commit()
+                except Exception as e:
+                    try:
+                        with open('/damers-bot/banned_users.txt', mode='a') as csv_file:
+                            csv_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+                            csv_writer.writerow([member.id, user, reason, date.today(), mod, server])
+                    except Exception as e:
+                        await ctx.send(f"Uh oh, looks like something went wrong. I fucked up.")
+                        await ctx.send(f"Send this error \n| {e} |\n to my maintainer <@{dist}>")
+                    
+                    await ctx.send(f"Uh oh, looks like something went wrong. Dont Worry I Still recorded {user} on the CSV file for you.")
+                    await ctx.send(f"Send this error \n| {e} |\n to my maintainer <@{dist}>")
+
             try:
                 embed = discord.Embed(title="Banned", url="" , description="" , color=0xff0000)
                 embed.add_field(name="User", value=f"@{user}", inline=True)
