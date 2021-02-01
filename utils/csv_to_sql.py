@@ -1,13 +1,18 @@
 import sqlite3
-import pandas as pd
+import csv
 
-conn = sqlite3.connect(r'/cross-bot-code/ban_list.db')
+conn = sqlite3.connect('./ban_list.db')
 
-ban_data = pd.read_csv('/cross-bot-code/banned_users.txt')
-ban_data.to_sql('ban_list', conn, if_exists='replace', index=False)
-
+sql = """
+  INSERT OR IGNORE INTO ban_list(user_id, user_name, reason, date, mod, server)
+                   VALUES(?,?,?,?,?,?)
+"""
 cur = conn.cursor()
-for row in cur.execute('SELECT * FROM banned'):
-    print(row)
-
-conn.close()
+with open('banned_users.txt', 'r', encoding="utf8") as f:
+    data = csv.reader(f)
+    for i,row in enumerate(data):
+      print(row)
+      if i > 10:
+        break
+    cur.executemany(sql, data)
+    conn.commit()
