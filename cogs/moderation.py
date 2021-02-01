@@ -24,19 +24,18 @@ class ModCog(commands.Cog, name='Moderation'):
             await ctx.send(f"!Ban needs a User and a Reason <@{ctx.author.id}>")
         else:
             # Write to file (appending)
-            async with aiosqlite.connect('./ban_list.db ') as db:
+            async with aiosqlite.connect('/cross-bot-code/ban_list.db') as db:
                 try:
-                    print(user)
-                    await db.execute("INSERT INTO ban_list (user_id, user_name, reason, date, mod, server) VALUES (?,?,?,?,?,?)", (int(member.id), str(user), str(reason), str(date.today()), str(mod), str(server)))
+                    await db.execute("INSERT OR IGNORE INTO ban_list(user_id, user_name, reason, date, mod, server) VALUES(?, ?, ?, ?, ?, ?)", (int(member.id), str(user), str(reason), str(date.today()), str(mod), str(server)))
                     await db.commit()
                 except Exception as e:
                     try:
                         with open('/damers-bot/banned_users.txt', mode='a') as csv_file:
                             csv_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
                             csv_writer.writerow([member.id, user, reason, date.today(), mod, server])
-                    except Exception as e:
+                    except Exception as EX:
                         await ctx.send(f"Uh oh, looks like something went wrong. I fucked up.")
-                        await ctx.send(f"Send this error \n| {e} |\n to my maintainer <@{dist}>")
+                        await ctx.send(f"Send this error \n| {EX} |\n to my maintainer <@{dist}>")
                     
                     await ctx.send(f"Uh oh, looks like something went wrong. Dont Worry I Still recorded {user} on the CSV file for you.")
                     await ctx.send(f"Send this error \n| {e} |\n to my maintainer <@{dist}>")
@@ -62,25 +61,25 @@ class ModCog(commands.Cog, name='Moderation'):
     # Get previous bans pre Bot Inclusion
     async def update_ban_list(self, ctx):
         banned_users = await ctx.guild.bans()
-        with open('/damers-bot/banned_users.txt', mode="r") as csv_file:
-            data = [i for i in csv.reader(csv_file)]
-        w_flag = True
-        num = 0
-        mod = await self.bot.fetch_user(ctx.author.id)
-        for entry in banned_users:
-            DID = entry.user.id
-            reason = entry.reason
-            if reason =="":
-                reason = "None"
-            for row in data:
-                if row[0] == str(DID):
-                    w_flag = False
-            if w_flag == True:
-                with open('/damers-bot/banned_users.txt', 'a') as csv_file:
-                    csv_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-                    csv_writer.writerow([DID, entry.user, reason, "Date N/A", mod, ctx.guild.name])
-                print(f"Added Entry for user {entry.user}")
+        async with aiosqlite.connect('/cross-bot-code/ban_list.db') as db:
+            num = 0
+            for entry in banned_users:
+                reason = entry.reason
+                if reason == "":
+                    reason = "None"
+                try:
+                    await db.execute("""
+                        INSERT OR IGNORE INTO ban_list(user_id, user_name, reason, date, mod, server)
+                        VALUES(?,?,?,?,?,?)""",
+                        (
+                            int(entry.user.id), str(entry.user), str(reason),
+                            str(date.today()), str(ctx.author), str(ctx.guild.name)
+                        )
+                    )
+                except Exception as e:
+                    await ctx.send(f"Send this error \n| {e} |\n to my maintainer <@{dist}>")
                 num += 1
+            await db.commit()
         await ctx.send(f"Updated List with {num} Entries")
 
     @commands.command()
