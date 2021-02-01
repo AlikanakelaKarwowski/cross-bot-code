@@ -13,7 +13,7 @@ class EventsCog(commands.Cog, name='Events'):
 
         if ctx.channel.id in discord_channel:
         # Roles specifically include Bad Advice
-            if str(ctx.author.roles).__contains__(role) or ctx.author.id == 767061737030811648:
+            if str(ctx.author.roles).__contains__(role):
                 await ctx.add_reaction('🤡')
 
 def setup(bot):
