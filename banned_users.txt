@@ -1,20 +1,19 @@
-user_id,user_name,reason,date,mod,server
-151255511994597376,webmaster#2994,,Date N/A,Smaen#9999,PC Help Hub
+151255511994597376,webmaster#2994,None,Date N/A,Smaen#9999,PC Help Hub
 166519316261371904,Deleted User 9f7a998c#3973,Being an ass and giving bad advice,Date N/A,Smaen#9999,PC Help Hub
-190715094672474115,rray#2699,,Date N/A,Smaen#9999,PC Help Hub
+190715094672474115,rray#2699,None,Date N/A,Smaen#9999,PC Help Hub
 216241381889277952,WEEEBANANANA#0165,keep your loli shit in your depraved minds.,Date N/A,Smaen#9999,PC Help Hub
-216496510391549952,larry bird#5163,,Date N/A,Smaen#9999,PC Help Hub
+216496510391549952,larry bird#5163,None,Date N/A,Smaen#9999,PC Help Hub
 234005836274335744,BananaJane#5528,you had the thin ice%2C you kept on not following the rules. You've now carried it too far and will not be welcome here again. Thanks for the stay and have an amazing day.,Date N/A,Smaen#9999,PC Help Hub
 235595819808587776,lil 🅱ete#2580,Idiot,Date N/A,Smaen#9999,PC Help Hub
 236638726250299393,King Aegon Targaryen I™#5470,Take your homophobic views and stick them up your ass. Fuck off and don't come back!,Date N/A,Smaen#9999,PC Help Hub
-239075946290872320,Magma#7000,,Date N/A,Smaen#9999,PC Help Hub
+239075946290872320,Magma#7000,None,Date N/A,Smaen#9999,PC Help Hub
 241734360116494337,cool bird#4061,Offensive posts,Date N/A,Smaen#9999,PC Help Hub
 244651137477640196,piantisimo#1605,Spamming,Date N/A,Smaen#9999,PC Help Hub
-261617855257116672,Whoopity Longjohn#9982,,Date N/A,Smaen#9999,PC Help Hub
+261617855257116672,Whoopity Longjohn#9982,None,Date N/A,Smaen#9999,PC Help Hub
 270580698916585482,Arcticuz#8507,adv,Date N/A,Smaen#9999,PC Help Hub
-270636920126701568,♂ Man ♂#2164,,Date N/A,Smaen#9999,PC Help Hub
-273696505163153408,seth#4949,,Date N/A,Smaen#9999,PC Help Hub
-280491905068957696,Being Gay Is A Disease#9421,,Date N/A,Smaen#9999,PC Help Hub
+270636920126701568,♂ Man ♂#2164,None,Date N/A,Smaen#9999,PC Help Hub
+273696505163153408,seth#4949,None,Date N/A,Smaen#9999,PC Help Hub
+280491905068957696,Being Gay Is A Disease#9421,None,Date N/A,Smaen#9999,PC Help Hub
 281543999419056139,Deleted User cd9db5e1#4429,Underage,Date N/A,Smaen#9999,PC Help Hub
 289947279593570304,pergopa#8179,Racism,Date N/A,Smaen#9999,PC Help Hub
 291050163378847746,Ashton#8507,Threats,Date N/A,Smaen#9999,PC Help Hub
@@ -25,13 +24,13 @@ user_id,user_name,reason,date,mod,server
 304006286171963404,dixxxxxxx#2127,DMing server invites to staff and experienced builders. (adveritsement),Date N/A,Smaen#9999,PC Help Hub
 305427826423758849,Southern Rock Lover#7592,"Repeated advertisement, Insulting Staff and Spamming  DM’s",Date N/A,Smaen#9999,PC Help Hub
 310034002851659776,fuck? why?#8794,Discord TOS,Date N/A,Smaen#9999,PC Help Hub
-310160179411025920,Burlord#2787,,Date N/A,Smaen#9999,PC Help Hub
+310160179411025920,Burlord#2787,None,Date N/A,Smaen#9999,PC Help Hub
 312194504931147776,WhoIsCosmic#6443,Asshole,Date N/A,Smaen#9999,PC Help Hub
-327271918203961344,Food#1958,,Date N/A,Smaen#9999,PC Help Hub
+327271918203961344,Food#1958,None,Date N/A,Smaen#9999,PC Help Hub
 329022921538535425,mrsoggysack#7755,No Reason Provided.,Date N/A,Smaen#9999,PC Help Hub
-332321830847381504,Dalsecco#6047,,Date N/A,Smaen#9999,PC Help Hub
+332321830847381504,Dalsecco#6047,None,Date N/A,Smaen#9999,PC Help Hub
 332629187250880513,Brown#8454,Stop disrespecting staff members and using offensive names ,Date N/A,Smaen#9999,PC Help Hub
-334740047129477120,Deleted User a222b44c#8634,,Date N/A,Smaen#9999,PC Help Hub
+334740047129477120,Deleted User a222b44c#8634,None,Date N/A,Smaen#9999,PC Help Hub
 335847536071802880,Sainty#0730,Dont spam and troll,Date N/A,Smaen#9999,PC Help Hub
 351541254821249025,Keirin8#6616,dont spam ping pingable roles,Date N/A,Smaen#9999,PC Help Hub
 351719202274541568,Nexo#6620,"Spamming and racial slurs",Date N/A,Smaen#9999,PC Help Hub
@@ -43,109 +42,109 @@ user_id,user_name,reason,date,mod,server
 369165364128514049,TomTheLumberMan#0069,Rule 2. Go outside.,Date N/A,Smaen#9999,PC Help Hub
 370301208365236225,hello men#7077,You were warned twice%2C and continued. Rule 3.,Date N/A,Smaen#9999,PC Help Hub
 373983344012034048,Lepro.#0001,Inappropriate name,Date N/A,Smaen#9999,PC Help Hub
-375400073770565642,PcSells#0328,,Date N/A,Smaen#9999,PC Help Hub
+375400073770565642,PcSells#0328,None,Date N/A,Smaen#9999,PC Help Hub
 380044606978392074,hbomb.#9379,Possibly scam links,Date N/A,Smaen#9999,PC Help Hub
 385237665240580099,Kareem#5242,Hate speech,Date N/A,Smaen#9999,PC Help Hub
 385428786579111936,Kossa#9488,Spamming own NSFW content,Date N/A,Smaen#9999,PC Help Hub
-388899574003269632,LIME#3095,,Date N/A,Smaen#9999,PC Help Hub
+388899574003269632,LIME#3095,None,Date N/A,Smaen#9999,PC Help Hub
 389482798005616651,╲⎝⧹GlizzyGobbler⧸⎠╱ ✓ᵛᵉʳᶦᶠᶦᵉᵈ#2506,"Spam, porn",Date N/A,Smaen#9999,PC Help Hub
 389951764213923840,mfnick#5751,"hate speech",Date N/A,Smaen#9999,PC Help Hub
 390669113695141888,Terrap#7995,"Link",Date N/A,Smaen#9999,PC Help Hub
 393867351487152128,LValen#7212,Troll,Date N/A,Smaen#9999,PC Help Hub
 394569659816345614,Joee#9672,Dont spam and dm staff members,Date N/A,Smaen#9999,PC Help Hub
 394905829993611264,RigorousBacon66#6962,"Advertising, spam",Date N/A,Smaen#9999,PC Help Hub
-399287325001252875,Dutchman#1969,,Date N/A,Smaen#9999,PC Help Hub
+399287325001252875,Dutchman#1969,None,Date N/A,Smaen#9999,PC Help Hub
 403273619310116865,callmu#3995,dont spam and troll,Date N/A,Smaen#9999,PC Help Hub
 410260773361811456,Arsenic#6747,Go fuck yourself,Date N/A,Smaen#9999,PC Help Hub
-411603725665304578,Mando#8120,,Date N/A,Smaen#9999,PC Help Hub
+411603725665304578,Mando#8120,None,Date N/A,Smaen#9999,PC Help Hub
 414177006197145601,ong#4601,how about fuck off. Please?,Date N/A,Smaen#9999,PC Help Hub
 424236172932546572,FILLYCHESE#9659,Dont post nsfw images,Date N/A,Smaen#9999,PC Help Hub
 431458855827013652,Madness#1939,Posting NSFW Discord invite,Date N/A,Smaen#9999,PC Help Hub
-431876109395689472,arkaseu#5945,,Date N/A,Smaen#9999,PC Help Hub
+431876109395689472,arkaseu#5945,None,Date N/A,Smaen#9999,PC Help Hub
 432320889703628801,✞♡ 𝐏𝐥𝐨𝐨𝐬𝐡𝐢𝐞 ♡✞#8436,Keep your racist slurs out of this server. Don't come back if you if you won't improve.,Date N/A,Smaen#9999,PC Help Hub
 435828331964006403,nica_woofy#3781,Yes,Date N/A,Smaen#9999,PC Help Hub
-445096479695044608,Juffyz#6856,,Date N/A,Smaen#9999,PC Help Hub
+445096479695044608,Juffyz#6856,None,Date N/A,Smaen#9999,PC Help Hub
 447926718217584651,Razorok#8451,Hate ￼ symbols in your “Forbidden gaming pc build tutorial￼,Date N/A,Smaen#9999,PC Help Hub
 449788978581733377,NightmarBeef#4957,spamming racial slurs,Date N/A,Smaen#9999,PC Help Hub
 450030806359080960,wakqx#1611,Thin Ice Ban,Date N/A,Smaen#9999,PC Help Hub
 457970702591590402,Deleted User a264767b#1454,Racial slurs,Date N/A,Smaen#9999,PC Help Hub
-460893221757911042,Rare Guun#5873,,Date N/A,Smaen#9999,PC Help Hub
-469924937646342144,Maurice Janssen#0001,,Date N/A,Smaen#9999,PC Help Hub
-477114203052703764,frontlevepro25#4830,,Date N/A,Smaen#9999,PC Help Hub
+460893221757911042,Rare Guun#5873,None,Date N/A,Smaen#9999,PC Help Hub
+469924937646342144,Maurice Janssen#0001,None,Date N/A,Smaen#9999,PC Help Hub
+477114203052703764,frontlevepro25#4830,None,Date N/A,Smaen#9999,PC Help Hub
 481112396090441740,Failure#6813,ok quenfuwb eifbeusb aoebcj,Date N/A,Smaen#9999,PC Help Hub
-484440938467557387,ClipBot101#7007,,Date N/A,Smaen#9999,PC Help Hub
+484440938467557387,ClipBot101#7007,None,Date N/A,Smaen#9999,PC Help Hub
 485979243516526596,hooisit#5930,"Stop disrespecting Staff, EB’s and Members",Date N/A,Smaen#9999,PC Help Hub
-497714819416195082,Supreme leader#2234,,Date N/A,Smaen#9999,PC Help Hub
+497714819416195082,Supreme leader#2234,None,Date N/A,Smaen#9999,PC Help Hub
 506582665600827402,🍌!#6496,dont join just to troll and break discord ToS,Date N/A,Smaen#9999,PC Help Hub
 506587148384993300,Deleted User 9ec8fbc8#8633,Inappropriate content,Date N/A,Smaen#9999,PC Help Hub
-509074872769576960,𝔸𝕤𝕡𝕖𝕩#6847,,Date N/A,Smaen#9999,PC Help Hub
-512434558856331264,BIG BIG#1519,,Date N/A,Smaen#9999,PC Help Hub
-527634365245554690,squareslay#5835,,Date N/A,Smaen#9999,PC Help Hub
+509074872769576960,𝔸𝕤𝕡𝕖𝕩#6847,None,Date N/A,Smaen#9999,PC Help Hub
+512434558856331264,BIG BIG#1519,None,Date N/A,Smaen#9999,PC Help Hub
+527634365245554690,squareslay#5835,None,Date N/A,Smaen#9999,PC Help Hub
 531241439842271242,Kingpin®#6900,Thin Ice (90d tempban) Breaking rules%2C pinging people for no reason%2C acted like staff on more than once occasion within 2 hours,Date N/A,Smaen#9999,PC Help Hub
 531599695437496330,Extra Chromosome#2958,Self promotion of yourself,Date N/A,Smaen#9999,PC Help Hub
-531605025223475208,Jucci#5947,,Date N/A,Smaen#9999,PC Help Hub
-531652234178592819,!Charlie#1000,,Date N/A,Smaen#9999,PC Help Hub
+531605025223475208,Jucci#5947,None,Date N/A,Smaen#9999,PC Help Hub
+531652234178592819,!Charlie#1000,None,Date N/A,Smaen#9999,PC Help Hub
 537599748170055696,hank#0420,Possible troll,Date N/A,Smaen#9999,PC Help Hub
 538745611609047042,Darkrai192 LoL#9432,False Links.,Date N/A,Smaen#9999,PC Help Hub
 541008202746167316,wc#1668,Troll account,Date N/A,Smaen#9999,PC Help Hub
 541322766566031375,charli#0100,Various reasons. Nobody reads this anyway,Date N/A,Smaen#9999,PC Help Hub
 542484479520800782,Deleted User b7d67fbf#7530,Dont try and get with our EBs,Date N/A,Smaen#9999,PC Help Hub
 542804919468687362,tronald D dump#7866,NSFW images,Date N/A,Smaen#9999,PC Help Hub
-544283340837093396,Deleted User 91ab6d01#9089,,Date N/A,Smaen#9999,PC Help Hub
+544283340837093396,Deleted User 91ab6d01#9089,None,Date N/A,Smaen#9999,PC Help Hub
 551885633241743380,woop out 90#0386,Dont throw out racial slurs,Date N/A,Smaen#9999,PC Help Hub
 556607508794441748,soulja#6030,Rule 1: Insulting staff. History of breaking rules,Date N/A,Smaen#9999,PC Help Hub
-557294656338001950,ٴٴٴcheese#2442,,Date N/A,Smaen#9999,PC Help Hub
+557294656338001950,ٴٴٴcheese#2442,None,Date N/A,Smaen#9999,PC Help Hub
 557689121188085771,Brazifye#0612,Don't come here just to advertise yourself%2C and certainly don't try to ping over 8k people.,Date N/A,Smaen#9999,PC Help Hub
-565904901184684032,Steph002#4589,,Date N/A,Smaen#9999,PC Help Hub
+565904901184684032,Steph002#4589,None,Date N/A,Smaen#9999,PC Help Hub
 567094630701858835,Mar.#9020,Inappropriate profile picture,Date N/A,Smaen#9999,PC Help Hub
-567684700039020544,Gilbert#5818,,Date N/A,Smaen#9999,PC Help Hub
+567684700039020544,Gilbert#5818,None,Date N/A,Smaen#9999,PC Help Hub
 568845117893378078,declanmillz#4230,Advertising,Date N/A,Smaen#9999,PC Help Hub
 570806596561797141,𝔇 𝔨𝔦𝔫𝔤*#6290,dont come here to advertise ,Date N/A,Smaen#9999,PC Help Hub
 572345349914624002,SenpaiStuff#3028,Don't advertise your shit here please.,Date N/A,Smaen#9999,PC Help Hub
 580865045597126677,Deleted User f23e491e#2123,Using the N word is a hard ban. Rule 1.,Date N/A,Smaen#9999,PC Help Hub
-581422101852979211,i like men because there awesome#1593,,Date N/A,Smaen#9999,PC Help Hub
+581422101852979211,i like men because there awesome#1593,None,Date N/A,Smaen#9999,PC Help Hub
 581610434931720193,Jediah#6993,Selfbotting,Date N/A,Smaen#9999,PC Help Hub
-583391868063318035,alpha max#9582,,Date N/A,Smaen#9999,PC Help Hub
-591336090896564226,InvertedSense#0159,,Date N/A,Smaen#9999,PC Help Hub
-604894561709326369,Ted1942#0001,,Date N/A,Smaen#9999,PC Help Hub
-608764188277604372,Roy_Dookie#9064,,Date N/A,Smaen#9999,PC Help Hub
+583391868063318035,alpha max#9582,None,Date N/A,Smaen#9999,PC Help Hub
+591336090896564226,InvertedSense#0159,None,Date N/A,Smaen#9999,PC Help Hub
+604894561709326369,Ted1942#0001,None,Date N/A,Smaen#9999,PC Help Hub
+608764188277604372,Roy_Dookie#9064,None,Date N/A,Smaen#9999,PC Help Hub
 609489631574098101,AnakinOU74#3395,No fuck you,Date N/A,Smaen#9999,PC Help Hub
 614938846315937797,BeeMW64#5922,if you didn't learn once%2C you probably won't learn anymore,Date N/A,Smaen#9999,PC Help Hub
 616900693961342988,MarkZC8261#9862,Not sure why you%E2%80%99re posting IP grabber links but goodbye. Don%E2%80%99t return.,Date N/A,Smaen#9999,PC Help Hub
-622544384038273024,GangMasterOG#5166,,Date N/A,Smaen#9999,PC Help Hub
+622544384038273024,GangMasterOG#5166,None,Date N/A,Smaen#9999,PC Help Hub
 624567314406178836,unknøwn#9178,Dont post nsfw images,Date N/A,Smaen#9999,PC Help Hub
 624761353504161792,Itz_Kavish#5698,Repeatedly breaking rules,Date N/A,Smaen#9999,PC Help Hub
 630090411079368733,qwewtt#0023,Breaking Discord TOS,Date N/A,Smaen#9999,PC Help Hub
-630867941142953984,CrackHead#1000,,Date N/A,Smaen#9999,PC Help Hub
+630867941142953984,CrackHead#1000,None,Date N/A,Smaen#9999,PC Help Hub
 632010688071729188,Mystic#8113,Troll,Date N/A,Smaen#9999,PC Help Hub
 640750607522594816,Deleted User 3b181e52#0519,Being NSFW to eb's in DMS,Date N/A,Smaen#9999,PC Help Hub
 645564599373922304,Gamer Studio 3#6531,dont disrespect staff members,Date N/A,Smaen#9999,PC Help Hub
-658860777364783104,oReIentless#4944,,Date N/A,Smaen#9999,PC Help Hub
+658860777364783104,oReIentless#4944,None,Date N/A,Smaen#9999,PC Help Hub
 659268436203012139,chris hansen#6496,You've been a toxic piece of shit today of all days. So with all due disrespect - go fuck yourself sideways and don't come back.,Date N/A,Smaen#9999,PC Help Hub
 660758276836950027,Laji#9450,Cunt,Date N/A,Smaen#9999,PC Help Hub
 663229520479911971,dragon slayer#6677,repeated questions even after answered,Date N/A,Smaen#9999,PC Help Hub
 663400632895668249,MadLad69#8698,No Reason Provided.,Date N/A,Smaen#9999,PC Help Hub
 665823147261427712,ya_boy_dylan#1062,"Dont throw out racial slurs",Date N/A,Smaen#9999,PC Help Hub
-670495031399809054,AHAHAHA.#3573,,Date N/A,Smaen#9999,PC Help Hub
+670495031399809054,AHAHAHA.#3573,None,Date N/A,Smaen#9999,PC Help Hub
 675699892362149889,ceodadbod#0942,No Reason Provided.,Date N/A,Smaen#9999,PC Help Hub
 676162628371873792,Super#9846,No Reason Provided.,Date N/A,Smaen#9999,PC Help Hub
-679228107869388815,Blue Polo YT#9509,,Date N/A,Smaen#9999,PC Help Hub
-682734938130612225,dk#2804,,Date N/A,Smaen#9999,PC Help Hub
-682774681844973568,L_ght#2124,,Date N/A,Smaen#9999,PC Help Hub
+679228107869388815,Blue Polo YT#9509,None,Date N/A,Smaen#9999,PC Help Hub
+682734938130612225,dk#2804,None,Date N/A,Smaen#9999,PC Help Hub
+682774681844973568,L_ght#2124,None,Date N/A,Smaen#9999,PC Help Hub
 691780973419036722,Deleted User 9a35def1#3650,"Posting NSFW Content, Offensive content",Date N/A,Smaen#9999,PC Help Hub
-693266456372314123,Padre#5675,,Date N/A,Smaen#9999,PC Help Hub
+693266456372314123,Padre#5675,None,Date N/A,Smaen#9999,PC Help Hub
 693952656317743158,Deleted User 56ef376e#9536,Due to your behaviour%2C you are not welcome here anymore.,Date N/A,Smaen#9999,PC Help Hub
-694610420329349200,xiziahx#1933,,Date N/A,Smaen#9999,PC Help Hub
+694610420329349200,xiziahx#1933,None,Date N/A,Smaen#9999,PC Help Hub
 697676848427040778,ryan B)#3651,Slurs,Date N/A,Smaen#9999,PC Help Hub
-698616614995886161,lolfunny#8415,,Date N/A,Smaen#9999,PC Help Hub
+698616614995886161,lolfunny#8415,None,Date N/A,Smaen#9999,PC Help Hub
 698701717532835850,Orcy#8514,Underage,Date N/A,Smaen#9999,PC Help Hub
 701980746994286674,woolier the sender of memes#0995,Dont post swastikas,Date N/A,Smaen#9999,PC Help Hub
 704009030799982652,Deleted User c09f99b3#4545,Don't,Date N/A,Smaen#9999,PC Help Hub
-704819279501197433,ovo#2240,,Date N/A,Smaen#9999,PC Help Hub
+704819279501197433,ovo#2240,None,Date N/A,Smaen#9999,PC Help Hub
 705918865129078865,iLovekids#9063,NSFW PFP,Date N/A,Smaen#9999,PC Help Hub
 706943438276526096,Kakorot#6029,Asshole,Date N/A,Smaen#9999,PC Help Hub
-707639323209760779,Rush#9570,,Date N/A,Smaen#9999,PC Help Hub
-707652726833676331,Abstractiox#4467,,Date N/A,Smaen#9999,PC Help Hub
+707639323209760779,Rush#9570,None,Date N/A,Smaen#9999,PC Help Hub
+707652726833676331,Abstractiox#4467,None,Date N/A,Smaen#9999,PC Help Hub
 710301845838364793,Leader mint#7138,I gave you so many chances. Please take this time to consider why you are acting this way to strangers who are trying to help other strangers.,Date N/A,Smaen#9999,PC Help Hub
 712060316690939914,Deleted User d67e3eb8#6226,Offensive slurs,Date N/A,Smaen#9999,PC Help Hub
 713196220654419981,Fangs#9202,racisl slurs,Date N/A,Smaen#9999,PC Help Hub
@@ -155,7 +154,7 @@ user_id,user_name,reason,date,mod,server
 719824370708643886,Kilo#1684,Spam,Date N/A,Smaen#9999,PC Help Hub
 720729694000906324,Snoopy chaun#0459,Dont be a dick to staff in dms and stop trolling,Date N/A,Smaen#9999,PC Help Hub
 724718852163895306,Orbit#5554,rule 2. You have been warned%2C muted%2C and warned again.,Date N/A,Smaen#9999,PC Help Hub
-731219123115393094,NuhatWasHere#9987,,Date N/A,Smaen#9999,PC Help Hub
+731219123115393094,NuhatWasHere#9987,None,Date N/A,Smaen#9999,PC Help Hub
 731614175394267156,heatseekingretard#2240,don't come here just to waste time. We're just volunteers.,Date N/A,Smaen#9999,PC Help Hub
 733285600026689547,Char Char Wazowski#6061,Spam/Trolling,Date N/A,Smaen#9999,PC Help Hub
 735374317650575413,robindrip#0605,Don't come here just to advertise your stuff. Rule 6.,Date N/A,Smaen#9999,PC Help Hub
@@ -167,49 +166,49 @@ user_id,user_name,reason,date,mod,server
 744435638044065853,JoJomum#9562,Advertising ,Date N/A,Smaen#9999,PC Help Hub
 744883996973989979,ps2gamer69#6050,Trolling/Spamming,Date N/A,Smaen#9999,PC Help Hub
 745293330610651257,BestNestBan#4310,Ban Evading (3rd time),Date N/A,Smaen#9999,PC Help Hub
-746734689808810054,XLegit#5227,,Date N/A,Smaen#9999,PC Help Hub
+746734689808810054,XLegit#5227,None,Date N/A,Smaen#9999,PC Help Hub
 747425463298818088,jackson!#6515,Advertising ,Date N/A,Smaen#9999,PC Help Hub
-748219530119217243,fuckHighNow#0535,,Date N/A,Smaen#9999,PC Help Hub
+748219530119217243,fuckHighNow#0535,None,Date N/A,Smaen#9999,PC Help Hub
 748228618664280124,fuckLowGone#2706,"5TH FUCKING ALT.. STOP (ban evading tos)",Date N/A,Smaen#9999,PC Help Hub
-750213084194406500,Discordspeedrunner#8365,,Date N/A,Smaen#9999,PC Help Hub
-750576522427105310,0xFF#9807,,Date N/A,Smaen#9999,PC Help Hub
+750213084194406500,Discordspeedrunner#8365,None,Date N/A,Smaen#9999,PC Help Hub
+750576522427105310,0xFF#9807,None,Date N/A,Smaen#9999,PC Help Hub
 753095503406694490,Deleted User 3af5c188#1972,rule 2. Seriously%3F,Date N/A,Smaen#9999,PC Help Hub
-754683545489899532,smackattack#1234,,Date N/A,Smaen#9999,PC Help Hub
-754801968991436863,Chavão#6666,,Date N/A,Smaen#9999,PC Help Hub
+754683545489899532,smackattack#1234,None,Date N/A,Smaen#9999,PC Help Hub
+754801968991436863,Chavão#6666,None,Date N/A,Smaen#9999,PC Help Hub
 756356687694397440,Bytecode Velocity#9426,Spammer,Date N/A,Smaen#9999,PC Help Hub
 758782817626357790,Jane_12#2827,Spambot,Date N/A,Smaen#9999,PC Help Hub
 760667925698183189,rickynicky#1748,No Reason Provided.,Date N/A,Smaen#9999,PC Help Hub
 761026213002346517,gusherfrog#1752,don%E2%80%99t be a dick to staff and other members,Date N/A,Smaen#9999,PC Help Hub
 761119231328518145,realtrapnigga#2748,bruh,Date N/A,Smaen#9999,PC Help Hub
-761292492381356082,Ghostツ#0372,,Date N/A,Smaen#9999,PC Help Hub
+761292492381356082,Ghostツ#0372,None,Date N/A,Smaen#9999,PC Help Hub
 762143113107079248,Deleted User 1f508692#9468,no,Date N/A,Smaen#9999,PC Help Hub
-762300272361340928,Freddy Has Big PP#4462,,Date N/A,Smaen#9999,PC Help Hub
-762414949711740938,Adolf Hitler#5390,,Date N/A,Smaen#9999,PC Help Hub
-764522058453221387,Aisyah#4959,,Date N/A,Smaen#9999,PC Help Hub
+762300272361340928,Freddy Has Big PP#4462,None,Date N/A,Smaen#9999,PC Help Hub
+762414949711740938,Adolf Hitler#5390,None,Date N/A,Smaen#9999,PC Help Hub
+764522058453221387,Aisyah#4959,None,Date N/A,Smaen#9999,PC Help Hub
 765019265740570644,IdanBM#2106,"Spam",Date N/A,Smaen#9999,PC Help Hub
-767828917477834802,Guzzy#0649,,Date N/A,Smaen#9999,PC Help Hub
+767828917477834802,Guzzy#0649,None,Date N/A,Smaen#9999,PC Help Hub
 768940538656587796,Drake#7835,adv,Date N/A,Smaen#9999,PC Help Hub
-769309562841858048,JSimpsx#7657,,Date N/A,Smaen#9999,PC Help Hub
+769309562841858048,JSimpsx#7657,None,Date N/A,Smaen#9999,PC Help Hub
 770059781154668564,Arnold#0971,"...and don't come back, you sorry walking bag of sus",Date N/A,Smaen#9999,PC Help Hub
-770722543640117270,shibadog#5177,,Date N/A,Smaen#9999,PC Help Hub
+770722543640117270,shibadog#5177,None,Date N/A,Smaen#9999,PC Help Hub
 772125312602865704,Basilisk Slave#4385,Spammer,Date N/A,Smaen#9999,PC Help Hub
-774253946104709151,softmew#3696,,Date N/A,Smaen#9999,PC Help Hub
+774253946104709151,softmew#3696,None,Date N/A,Smaen#9999,PC Help Hub
 774324248763432972,NickyRicky#9275,Don't come back ping pong boi,Date N/A,Smaen#9999,PC Help Hub
 774325276812640276,rickynicky#2024,"troll",Date N/A,Smaen#9999,PC Help Hub
-774328886707617844,ban me again i dare u#0946,,Date N/A,Smaen#9999,PC Help Hub
+774328886707617844,ban me again i dare u#0946,None,Date N/A,Smaen#9999,PC Help Hub
 774330283787943958,kowabungaYT#5619,No Reason Provided.,Date N/A,Smaen#9999,PC Help Hub
-774453225838346240,oofer224-567-34XX#1600,,Date N/A,Smaen#9999,PC Help Hub
-781729581345275914,NateisStraight#4788,,Date N/A,Smaen#9999,PC Help Hub
-783779285008646146,5453454354353454354#2811,,Date N/A,Smaen#9999,PC Help Hub
-790084560721412098,Wubbubbadubdub#8109,,Date N/A,Smaen#9999,PC Help Hub
-790771573668970506,JamesCharles#5128,,Date N/A,Smaen#9999,PC Help Hub
-791087466400579584,JamesCharlesFan#2672,,Date N/A,Smaen#9999,PC Help Hub
+774453225838346240,oofer224-567-34XX#1600,None,Date N/A,Smaen#9999,PC Help Hub
+781729581345275914,NateisStraight#4788,None,Date N/A,Smaen#9999,PC Help Hub
+783779285008646146,5453454354353454354#2811,None,Date N/A,Smaen#9999,PC Help Hub
+790084560721412098,Wubbubbadubdub#8109,None,Date N/A,Smaen#9999,PC Help Hub
+790771573668970506,JamesCharles#5128,None,Date N/A,Smaen#9999,PC Help Hub
+791087466400579584,JamesCharlesFan#2672,None,Date N/A,Smaen#9999,PC Help Hub
 791123392853180466,ShineyTushey101#8277,"Spammer",Date N/A,Smaen#9999,PC Help Hub
-791230489582370821,TrickyNicky#5915,,Date N/A,Smaen#9999,PC Help Hub
-791249086203297843,Hendrix#2518,,Date N/A,Smaen#9999,PC Help Hub
-791403321193529357,George kindwitt#0463,,Date N/A,Smaen#9999,PC Help Hub
+791230489582370821,TrickyNicky#5915,None,Date N/A,Smaen#9999,PC Help Hub
+791249086203297843,Hendrix#2518,None,Date N/A,Smaen#9999,PC Help Hub
+791403321193529357,George kindwitt#0463,None,Date N/A,Smaen#9999,PC Help Hub
 791424091340275734,SplishDplashYourOpinionIsTrash#2264,mass ping,Date N/A,Smaen#9999,PC Help Hub
-791442900570865664,johnnyneuro#9630,,Date N/A,Smaen#9999,PC Help Hub
+791442900570865664,johnnyneuro#9630,None,Date N/A,Smaen#9999,PC Help Hub
 791443770662977597,bintyShinty#3799,Fuck off,Date N/A,Smaen#9999,PC Help Hub
 791456497972412517,Drizz2.0#4336,racial slurs,Date N/A,Smaen#9999,PC Help Hub
 791561206854582302,Jakepaulfan#0831,NSFW,Date N/A,Smaen#9999,PC Help Hub
@@ -231,16 +230,16 @@ user_id,user_name,reason,date,mod,server
 749396554304979016,Turtle#7432,Well bye then if you're only going to be disruptive and ignore warnings,2021-01-04,Jackonian#0001,PC Help Hub
 418145078272589825,Undeafeted567#5238,sending malware and scan sites,2021-01-05,nobleway#6969,PC Help Hub
 538121704535359488,yeetguy#6607,false reports against another user,2021-01-05,DarkLink909#4470,PC Help Hub
-96943294428254208,CGuroC#2078,,Date N/A,Grxffiti#5047,PC Building 101
+96943294428254208,CGuroC#2078,None,Date N/A,Grxffiti#5047,PC Building 101
 234755782162251777,Toxic#1681,Grxffiti#5047: No advertising. We don't like people like that.,Date N/A,Grxffiti#5047,PC Building 101
 262982939569160193,Meep#1627,Grxffiti#5047: Yeah you arent a great addition to our server. Also maybe go do sports or something,Date N/A,Grxffiti#5047,PC Building 101
 270286322625806337,Sukine#9780,Grxffiti#5047: With those idiots,Date N/A,Grxffiti#5047,PC Building 101
 271670750912577536,Momen von Tosmarck#8564,"Weird mute, posting off topic memes in main chat, and trying to ping everyone",Date N/A,Grxffiti#5047,PC Building 101
 272593014898294784,invaliduser#9639,"Grxffiti#5047: Multiple infractions, even in the past.",Date N/A,Grxffiti#5047,PC Building 101
-287046334475796480,Sysmic#6969,,Date N/A,Grxffiti#5047,PC Building 101
+287046334475796480,Sysmic#6969,None,Date N/A,Grxffiti#5047,PC Building 101
 291001147655847937,Carny#2055,Grxffiti#5047: sorry kiddo,Date N/A,Grxffiti#5047,PC Building 101
 295216148683816970,Heucn#6574,Grxffiti#5047: lol,Date N/A,Grxffiti#5047,PC Building 101
-311971568236625921,"""Richy but raised in the hood""#7362",,Date N/A,Grxffiti#5047,PC Building 101
+311971568236625921,"""Richy but raised in the hood""#7362",None,Date N/A,Grxffiti#5047,PC Building 101
 338317571046637569,KiDoRi#0888,Grxffiti#5047: Dont be a troll.,Date N/A,Grxffiti#5047,PC Building 101
 346554268666298378,Arktiskt#3473,Grxffiti#5047: rejoined from different acc,Date N/A,Grxffiti#5047,PC Building 101
 346812954617970708,Deleted User a5935021#8626,noobiness_unlimited#5709: (No reason specified),Date N/A,Grxffiti#5047,PC Building 101
@@ -250,8 +249,8 @@ user_id,user_name,reason,date,mod,server
 380859570391613440,icy#8604,"toxic, being a nuisance",Date N/A,Grxffiti#5047,PC Building 101
 383791213481951232,YesIGetThatSamsungSSDsAreOnSale#3916,"Grxffiti#5047: Spam, c word, trying to ban, and annoying all the time.",Date N/A,Grxffiti#5047,PC Building 101
 389566122854449174,xxxcouchicion#3110,Grxffiti#5047: Peace out bitch.,Date N/A,Grxffiti#5047,PC Building 101
-396663153334812673,Dalton#4151,,Date N/A,Grxffiti#5047,PC Building 101
-398537852264382464,The Luka#8876,,Date N/A,Grxffiti#5047,PC Building 101
+396663153334812673,Dalton#4151,None,Date N/A,Grxffiti#5047,PC Building 101
+398537852264382464,The Luka#8876,None,Date N/A,Grxffiti#5047,PC Building 101
 402606072499535872,brodis#2088,fuck you troll,Date N/A,Grxffiti#5047,PC Building 101
 410179020076875778,Mango the legend#4506,"sworded#7800: saying slurs in DMs, harassment in DMs",Date N/A,Grxffiti#5047,PC Building 101
 412082889266823180,Krryssa#4479,Violating the rule of no explicit profile pictures.,Date N/A,Grxffiti#5047,PC Building 101
