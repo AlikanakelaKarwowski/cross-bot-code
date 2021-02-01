@@ -6,10 +6,10 @@ c.execute('''
     CREATE TABLE ban_list(
         entry INTEGER PRIMARY KEY AUTOINCREMENT,
         user_id INTEGER,
-        user_name TEXT NOT NULL,
+        user_name TEXT,
         reason TEXT,
-        date TEXT NOT NULL,
-        mod TEXT NOT NULL,
+        date TEXT,
+        mod TEXT,
         server TEXT
     )
 ''')
