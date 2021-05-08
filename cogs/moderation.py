@@ -4,8 +4,26 @@ from discord.utils import get
 
 from datetime import date
 from key import *
+import time
 
-
+# General db insert for bans
+async def db_ban(ctx, mem_id, user, reason, mod, server ):
+    async with aiosqlite.connect('/cross-bot-code/ban_list.db') as db:
+        try:
+            await db.execute("INSERT OR IGNORE INTO ban_list(user_id, user_name, reason, date, mod, server) VALUES(?, ?, ?, ?, ?, ?)",
+                (int(mem_id), str(user), str(reason), str(date.today()), str(mod), str(server)))
+            await db.commit()
+        except Exception as e:
+            try:
+                with open('/damers-bot/banned_users.txt', mode='a') as csv_file:
+                    csv_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+                    csv_writer.writerow([mem_id, user, reason, date.today(), mod, server])
+            except Exception as EX:
+                await ctx.send(f"Uh oh, looks like something went wrong. I fucked up.")
+                await ctx.send(f"Send this error \n| {EX} |\n to my maintainer <@{dist}>")
+            
+            await ctx.send(f"Uh oh, looks like something went wrong. Dont Worry I Still recorded {user} on the CSV file for you.")
+            await ctx.send(f"Send this error \n| {e} |\n to my maintainer <@{dist}>")
 class ModCog(commands.Cog, name='Moderation'):
 
     def __init__(self, bot):
@@ -13,6 +31,7 @@ class ModCog(commands.Cog, name='Moderation'):
 
     @commands.command()
     # Update file when a mod bans someone
+    @commands.command()
     async def ban(self, ctx, member: discord.Member = None, *, reason=""):
         mod = ctx.author
         perms = mod.guild_permissions.ban_members
@@ -55,18 +74,15 @@ class ModCog(commands.Cog, name='Moderation'):
                     embed.set_footer(text=f"<{member.id}> @{user}")
                     await ctx.send(embed=embed)
                 except Exception as e:
-                    if uwu == True:
-                        await ctx.send(f"Wuh Woh Mastew. uwu. Someting Went Aww Fucky Wucky Own Me. uwu. Down't Wowwy Mastew. uwu. I was a godd wittwe bot awnd wecowded {user} fow uwu anyways. uwu")
-                        await ctx.send(f"Send this error \n| {e} |\n to my master <@{dist}>")
-                    else:
-                        await ctx.send(f"Uh oh, looks like something went wrong. Dont Worry I Still recorded {user} for you.")
-                        await ctx.send(f"Send this error \n| {e} |\n to my maintainer <@{dist}>")
+                    await ctx.send(f"Uh oh, looks like something went wrong. Dont Worry I Still recorded {user} for you.")
+                    await ctx.send(f"Send this error \n| {e} |\n to my maintainer <@{dist}>")
         else:
-            await ctx.send(f"You don't have the right perms or roles. If you think this is an error please contact <@{dist}> about it.")
+            await ctx.send(f"You don't have the right perms or roles. If you think this is an error please contact your admins about it.")
 
-    @commands.command(aliases=["uplist"])
-    @commands.has_permissions(administrator=True)
+    
     # Get previous bans pre Bot Inclusion
+    # bot must have ban permissions to run
+    @commands.command(aliases=["uplist"])
     async def update_ban_list(self, ctx):
         banned_users = await ctx.guild.bans()
         async with aiosqlite.connect('/cross-bot-code/ban_list.db') as db:
@@ -90,6 +106,7 @@ class ModCog(commands.Cog, name='Moderation'):
             await db.commit()
         await ctx.send(f"Updated List with {num} Entries")
 
+    # Update file when a mod bans someone
     @commands.command()
     @commands.has_permissions(ban_members=True)
     # Update file when a mod bans someone
