@@ -99,7 +99,6 @@ class ModCog(commands.Cog, name='Moderation'):
     # Update file when a mod bans someone
     @commands.command()
     @commands.has_permissions(ban_members=True)
-    # Update file when a mod bans someone
     async def retcon(self, ctx, member, *, reason=""):
         uwu = False
         # User, Moderator, and Server
@@ -133,6 +132,23 @@ class ModCog(commands.Cog, name='Moderation'):
                 else:
                     await ctx.send(f"Uh oh, looks like something went wrong. Dont Worry I Still recorded {user} for you.")
                     await ctx.send(f"Send this error \n| {e} |\n to my maintainer <@{dist}>")
+
+    @commands.command()
+    @commands.has_permissions(ban_members=True)
+    async def autoban(self, ctx, *members):
+            #await ctx.send("Disabled, message Shin Ma#2121 to reenable")
+            reason = "bot or raid, if you feel this is an error message Shin Ma#2121"
+            server = ctx.guild.name
+            mod = ctx.author
+            for member in members:
+                try:
+                    member = await bot.fetch_user(int(member))
+                    await ctx.send(f"!ban {member} bot or raid")
+                    await ctx.guild.ban(member, reason=reason)
+                    await db_ban(ctx, member.id, member, reason, mod, server)
+                    time.sleep(1)
+                except Exception as e:
+                    ctx.send(f"The following error occured \n {e} \n Please message the creator for help")
 
 def setup(bot):
     bot.add_cog(ModCog(bot))
