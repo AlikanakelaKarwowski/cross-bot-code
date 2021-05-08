@@ -29,7 +29,6 @@ class ModCog(commands.Cog, name='Moderation'):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
     # Update file when a mod bans someone
     @commands.command()
     async def ban(self, ctx, member: discord.Member = None, *, reason=""):
@@ -39,32 +38,14 @@ class ModCog(commands.Cog, name='Moderation'):
         for r in mod_roles:
             if r in str(mod.roles):
                 mod_r =True
-        print(mod.roles)
         if perms or mod_r:
-            uwu = False
             # User, Moderator, and Server
             user = await self.bot.fetch_user(member.id)
             server = ctx.guild.name
             if reason == "" or member == None:
                 await ctx.send(f"!Ban needs a User and a Reason <@{ctx.author.id}>")
             else:
-                # Write to file (appending)
-                async with aiosqlite.connect('/cross-bot-code/ban_list.db') as db:
-                    try:
-                        await db.execute("INSERT OR IGNORE INTO ban_list(user_id, user_name, reason, date, mod, server) VALUES(?, ?, ?, ?, ?, ?)", (int(member.id), str(user), str(reason), str(date.today()), str(mod), str(server)))
-                        await db.commit()
-                    except Exception as e:
-                        try:
-                            with open('/damers-bot/banned_users.txt', mode='a') as csv_file:
-                                csv_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-                                csv_writer.writerow([member.id, user, reason, date.today(), mod, server])
-                        except Exception as EX:
-                            await ctx.send(f"Uh oh, looks like something went wrong. I fucked up.")
-                            await ctx.send(f"Send this error \n| {EX} |\n to my maintainer <@{dist}>")
-                        
-                        await ctx.send(f"Uh oh, looks like something went wrong. Dont Worry I Still recorded {user} on the CSV file for you.")
-                        await ctx.send(f"Send this error \n| {e} |\n to my maintainer <@{dist}>")
-
+                await db_ban(ctx, member.id, user, reason, mod, server)
                 try:
                     embed = discord.Embed(title="Banned", url="" , description="" , color=0xff0000)
                     embed.add_field(name="User", value=f"@{user}", inline=True)
@@ -84,27 +65,36 @@ class ModCog(commands.Cog, name='Moderation'):
     # bot must have ban permissions to run
     @commands.command(aliases=["uplist"])
     async def update_ban_list(self, ctx):
-        banned_users = await ctx.guild.bans()
-        async with aiosqlite.connect('/cross-bot-code/ban_list.db') as db:
-            num = 0
-            for entry in banned_users:
-                reason = entry.reason
-                if reason == "":
-                    reason = "None"
-                try:
-                    await db.execute("""
-                        INSERT OR IGNORE INTO ban_list(user_id, user_name, reason, date, mod, server)
-                        VALUES(?,?,?,?,?,?)""",
-                        (
-                            int(entry.user.id), str(entry.user), str(reason),
-                            str(date.today()), str(ctx.author), str(ctx.guild.name)
-                        )
-                    )
-                except Exception as e:
-                    await ctx.send(f"Send this error \n| {e} |\n to my maintainer <@{dist}>")
-                num += 1
-            await db.commit()
-        await ctx.send(f"Updated List with {num} Entries")
+        mod = ctx.author
+        perms = mod.guild_permissions.ban_members
+        server = ctx.guild.name
+        if perms:
+            try:
+                banned_users = await ctx.guild.bans()
+                num = 0
+                for entry in banned_users:
+                    reason = entry.reason
+                    if reason == "":
+                        reason = "None"
+                    await db_ban(ctx, entry.user.id, entry.user, reason, mod, server)
+                    num += 1
+            
+            except Exception as e:
+                await ctx.send(f"If your seeing this message then the bot most likely doesnt have the right permissions. It needs the \"Ban Users\" permission enabled.")
+                
+            await ctx.send(f"Updated List with {num} Entries")
+                    # try:
+                    #     await db.execute("""
+                    #         INSERT OR IGNORE INTO ban_list(user_id, user_name, reason, date, mod, server)
+                    #         VALUES(?,?,?,?,?,?)""",
+                    #         (
+                    #             int(entry.user.id), str(entry.user), str(reason),
+                    #             str(date.today()), str(ctx.author), str(ctx.guild.name)
+                    #         )
+                    #     )
+                    # except Exception as e:
+                    #     await ctx.send(f"Send this error \n| {e} |\n to my maintainer <@{dist}>")
+                # await db.commit()
 
     # Update file when a mod bans someone
     @commands.command()
