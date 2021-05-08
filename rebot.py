@@ -12,7 +12,7 @@ bot = commands.Bot(command_prefix=['!','.'])
 @bot.event
 async def on_ready():
     print(f'{bot.user} has connected to Discord!')
-semen = 0
+seed_set = 0
 initial_extensions = ['cogs.moderation', 'cogs.events']
 
 if __name__ == '__main__':
@@ -30,8 +30,8 @@ async def ping(ctx):
 @bot.command()
 @commands.has_any_role('Staff','Experienced Builder','Helper (Jr. EB)','Nitro Booster')
 async def ding(ctx, unit="inch"):
-    global semen
-    rd.seed((ctx.author.id + semen))
+    global seed_set
+    rd.seed((ctx.author.id + seed_set))
     if ctx.author.id == dist:
        await ctx.send(f"Your Dong is {rd.randrange(75,100)/10} inches long")
     elif unit == "cm" or unit == "CM" or unit == "Cm" :
@@ -41,9 +41,9 @@ async def ding(ctx, unit="inch"):
 
 @bot.command()
 async def seedgen(ctx, amount=0):
-    global semen
+    global seed_set
     if ctx.author.id == dist:
-        semen += int(amount)
+        seed_set += int(amount)
         await ctx.send(f"Seed was updated for new month by {amount} amount")
 
 @bot.command()
