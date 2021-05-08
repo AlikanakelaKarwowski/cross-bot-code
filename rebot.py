@@ -54,35 +54,5 @@ async def dong(ctx, member: discord.Member):
     else:
         return None
 
-"""
-@bot.command()
-@commands.has_permissions(ban_members=True)
-async def unban(ctx, member: discord.Member, *, reason=""):
-    user = await bot.fetch_user(member.id)
-    mod = await bot.fetch_user(ctx.author.id)
-    server = ctx.guild.name
-    if reason == "" or member == None:
-        await ctx.send(f"!Unban needs a User and a Reason <@{ctx.author.id}>")
-    else:
-        # Write to file (appending)
-        with open('/damers-bot/banned_users.txt', mode='r+') as csv_file:
-            csv_reader = csv.reader(csv_file)
-            for row in csv_reader:
-                if row[0] == member.id and row[5] == ctx.guild.name:
-                    csv_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-                    csv_writer.writerow
 
-        try:
-            embed = discord.Embed(title="Banned", url="", description="", color=0xff0000)
-            embed.add_field(name="User", value=f"@{user}", inline=True)
-            embed.add_field(name="Reason", value=reason, inline=True)
-            embed.add_field(name="Moderator", value=f"@{mod}", inline=True)
-            embed.add_field(name="Server", value=server, inline=True)
-            embed.set_footer(text=f"<{member.id}> @{user}")
-            await ctx.send(embed=embed)
-        except Exception as e:
-            await ctx.send(f"Wuh Woh Mastew. uwu. Someting Went Aww Fucky Wucky Own Me. uwu. Down't Wowwy Mastew. uwu. I was a godd wittwe bot awnd wecowded {user} fow uwu anyways. uwu")
-            await ctx.send(f"Send this error | {e} | to my master <@{dist}>")
-
-"""
 bot.run(DISCORD_TOKEN)
