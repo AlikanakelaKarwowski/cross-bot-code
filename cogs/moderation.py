@@ -143,7 +143,7 @@ class ModCog(commands.Cog, name='Moderation'):
             for member in members:
                 try:
                     member = await bot.fetch_user(int(member))
-                    await ctx.send(f"!ban {member} bot or raid")
+                    await ctx.send(f"banning {member} bot or raid")
                     await ctx.guild.ban(member, reason=reason)
                     await db_ban(ctx, member.id, member, reason, mod, server)
                     time.sleep(1)
