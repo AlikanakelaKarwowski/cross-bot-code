@@ -54,5 +54,6 @@ async def dong(ctx, member: discord.Member):
     else:
         return None
 
+# @bot.command()
 
 bot.run(DISCORD_TOKEN)

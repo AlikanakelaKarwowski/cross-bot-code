@@ -34,11 +34,14 @@ class ModCog(commands.Cog, name='Moderation'):
     async def ban(self, ctx, member: discord.Member = None, *, reason=""):
         mod = ctx.author
         perms = mod.guild_permissions.ban_members
-        mod_r= False
+        mod_r = False
+        user_r = False
         for r in mod_roles:
             if r in str(mod.roles):
-                mod_r =True
-        if perms or mod_r:
+                mod_r = True
+            if r in str(member.roles):
+                user_r = True
+        if (perms or mod_r) and not member.roles:
             # User, Moderator, and Server
             user = await self.bot.fetch_user(member.id)
             server = ctx.guild.name
@@ -58,7 +61,7 @@ class ModCog(commands.Cog, name='Moderation'):
                     await ctx.send(f"Uh oh, looks like something went wrong. Dont Worry I Still recorded {user} for you.")
                     await ctx.send(f"Send this error \n| {e} |\n to my maintainer <@{dist}>")
         else:
-            await ctx.send(f"You don't have the right perms or roles. If you think this is an error please contact your admins about it.")
+            await ctx.send(f"You don't have the right perms, roles, or the user is another moderator. If you think this is an error please contact your admins about it.")
 
     
     # Get previous bans pre Bot Inclusion
@@ -83,18 +86,6 @@ class ModCog(commands.Cog, name='Moderation'):
                 await ctx.send(f"If your seeing this message then the bot most likely doesnt have the right permissions. It needs the \"Ban Users\" permission enabled.")
                 
             await ctx.send(f"Updated List with {num} Entries")
-                    # try:
-                    #     await db.execute("""
-                    #         INSERT OR IGNORE INTO ban_list(user_id, user_name, reason, date, mod, server)
-                    #         VALUES(?,?,?,?,?,?)""",
-                    #         (
-                    #             int(entry.user.id), str(entry.user), str(reason),
-                    #             str(date.today()), str(ctx.author), str(ctx.guild.name)
-                    #         )
-                    #     )
-                    # except Exception as e:
-                    #     await ctx.send(f"Send this error \n| {e} |\n to my maintainer <@{dist}>")
-                # await db.commit()
 
     # Update file when a mod bans someone
     @commands.command()
@@ -126,12 +117,8 @@ class ModCog(commands.Cog, name='Moderation'):
                 embed.set_footer(text=f"<{int(member)}> @{user}")
                 await ctx.send(embed=embed)
             except Exception as e:
-                if uwu == True:
-                    await ctx.send(f"Wuh Woh Mastew. uwu. Someting Went Aww Fucky Wucky Own Me. uwu. Down't Wowwy Mastew. uwu. I was a godd wittwe bot awnd wecowded {user} fow uwu anyways. uwu")
-                    await ctx.send(f"Send this error \n| {e} |\n to my master <@{dist}>")
-                else:
-                    await ctx.send(f"Uh oh, looks like something went wrong. Dont Worry I Still recorded {user} for you.")
-                    await ctx.send(f"Send this error \n| {e} |\n to my maintainer <@{dist}>")
+                await ctx.send(f"Uh oh, looks like something went wrong. Dont Worry I Still recorded {user} for you.")
+                await ctx.send(f"Send this error \n| {e} |\n to my maintainer <@{dist}>")
 
     @commands.command()
     @commands.has_permissions(ban_members=True)

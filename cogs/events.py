@@ -11,10 +11,10 @@ class EventsCog(commands.Cog, name='Events'):
     @commands.Cog.listener()
     async def on_message(self, ctx):
 
-        if ctx.channel.id in discord_channel:
+        """if ctx.channel.id in discord_channel:
         # Roles specifically include Bad Advice
             if str(ctx.author.roles).__contains__(role):
-                await ctx.add_reaction('🤡')
+                await ctx.add_reaction('🤡')"""
 
 def setup(bot):
     bot.add_cog(EventsCog(bot))
